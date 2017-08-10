@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TesteXamarin.Cadastro"
+             Title="Cadastro">
+    
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nome:"></Label>
+                <Entry HorizontalOptions="FillAndExpand"></Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Email:"></Label>
+                <Entry HorizontalOptions="FillAndExpand"></Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Telefone:"></Label>
+                <Entry HorizontalOptions="FillAndExpand"></Entry>
+            </StackLayout>
+
+            <Button Text="Salvar"></Button>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

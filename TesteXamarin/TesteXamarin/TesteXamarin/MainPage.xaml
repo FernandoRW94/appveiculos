@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TesteXamarin"
+             x:Class="TesteXamarin.MainPage"
+             Title="Main Page">
+    
+    <StackLayout HorizontalOptions="Center">        
+        <StackLayout Orientation="Horizontal" Margin="10">
+            <Label Text="Welcome to Xamarin Forms!" />
+
+            <Label Text="Ololo" />
+
+            <Label Text="dksamdakdmaksmdks" />
+        </StackLayout>
+        
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Ololo1" Grid.Row="0" Grid.Column="0" />
+            <Label Text="Ololo1" Grid.Row="1" Grid.Column="1" />
+            <Label Text="Ololo1" Grid.Row="2" Grid.Column="2" />
+        </Grid>
+
+        <Button Text="Proxima Tela" Clicked="Button_Clicked"></Button>
+        <Button Text="Form" Clicked="OpenNewForm"></Button>
+    </StackLayout>
+    
+</ContentPage>
