@@ -31,8 +31,8 @@
             <Label Text="Ololo1" Grid.Row="2" Grid.Column="2" />
         </Grid>
 
-        <Button Text="Proxima Tela" Clicked="Button_Clicked"></Button>
         <Button Text="Form" Clicked="OpenNewForm"></Button>
+        <Button Text="Listagem" Clicked="OpenListView"></Button>
     </StackLayout>
     
 </ContentPage>

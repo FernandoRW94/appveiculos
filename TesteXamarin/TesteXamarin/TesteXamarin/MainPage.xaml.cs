@@ -23,5 +23,10 @@ namespace TesteXamarin
         {
             Navigation.PushAsync(new Cadastro());
         }
+
+        private void OpenListView(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Listagem());
+        }
     }
 }

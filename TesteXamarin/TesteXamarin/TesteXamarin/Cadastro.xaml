@@ -25,5 +25,25 @@
             <Button Text="Salvar"></Button>
         </StackLayout>
 
+        <!--<Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="Nome:"></Label>
+            <Entry Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand"></Entry>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Email:"></Label>
+            <Entry Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand"></Entry>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Telefone:"></Label>
+            <Entry Grid.Row="2" Grid.Column="1" HorizontalOptions="FillAndExpand"></Entry>
+        </Grid>-->
+
     </ContentPage.Content>
 </ContentPage>

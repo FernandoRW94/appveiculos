@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TesteXamarin.Detalhes"
+             Title="{Binding Descricao}">
+    
+    <ContentPage.Content>
+        
+        <StackLayout Orientation="Vertical">
+
+            <StackLayout Orientation="Horizontal" Margin="20,0,0,0">
+                <Label TextColor="Black" FontSize="Large" VerticalOptions="CenterAndExpand" Text="Fabricante:"></Label>
+                <Label TextColor="Black" FontSize="Large" VerticalOptions="CenterAndExpand" Text="{Binding Fabricante}"></Label>                
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="20,0,0,0">
+                <Label TextColor="Black" FontSize="Large" VerticalOptions="CenterAndExpand" Text="Modelo:"></Label>
+                <Label TextColor="Black" FontSize="Large" VerticalOptions="CenterAndExpand" Text="{Binding Modelo}"></Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="20,0,0,0">
+                <Label TextColor="Black" FontSize="Large" VerticalOptions="CenterAndExpand" Text="Valor:"></Label>
+                <Label TextColor="Black" FontSize="Large" VerticalOptions="CenterAndExpand" Text="{Binding ValorFormatado}"></Label>
+            </StackLayout>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>
