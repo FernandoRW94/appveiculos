@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fernando.OloloVeiculos.Views.ConfigurationView"
+             Title="{Binding FormatedName}">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="20">
+
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Opcionais">
+                        <SwitchCell Text="{Binding AirBagText}" On="{Binding AirBag}"></SwitchCell>
+                        <SwitchCell Text="{Binding ABSText}" On="{Binding Abs}"></SwitchCell>
+                        <SwitchCell Text="{Binding AirText}" On="{Binding AirCond}"></SwitchCell>
+                    </TableSection>
+                    <TableSection Title="Valores">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15">
+                                <Label Text="Valor Veículo: "></Label>
+                                <Label Text="{Binding FormatedPrice}"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15">
+                                <Label Text="Valor Opcionais: "></Label>
+                                <Label Text="{Binding OptionalsPrice}"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15">
+                                <Label Text="Valor Total: "></Label>
+                                <Label Text="{Binding TotalPrice}"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+            <Button Text="Agendar" Clicked="Button_Clicked" VerticalOptions="EndAndExpand"></Button>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

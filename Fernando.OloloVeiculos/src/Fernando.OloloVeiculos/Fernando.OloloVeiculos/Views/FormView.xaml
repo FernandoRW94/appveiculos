@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fernando.OloloVeiculos.Views.FormView"
+             Title="{Binding FormattedName}">
+    <ContentPage.Content>
+        <StackLayout Margin="25">
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nome: "/>
+                <Entry Text="{Binding Cliente.Nome}" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Telefone: "/>
+                <Entry Text="{Binding Cliente.Telefone}" HorizontalOptions="FillAndExpand" Keyboard="Telephone"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Email: "/>
+                <Entry Text="{Binding Cliente.Email}" HorizontalOptions="FillAndExpand" Keyboard="Email"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Data: "/>
+                <DatePicker Date="{Binding Agendamento.DateAgendamento}" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Hora: "/>
+                <TimePicker Time="{Binding Agendamento.TimeAgendamento}" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <Button Text="Agendar" Clicked="Button_Clicked" VerticalOptions="EndAndExpand"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

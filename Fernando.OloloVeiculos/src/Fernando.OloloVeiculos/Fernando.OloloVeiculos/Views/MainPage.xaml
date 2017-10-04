@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Fernando.OloloVeiculos"
+             x:Class="Fernando.OloloVeiculos.Views.MainPage"
+             Title="Ololo Veículos">
+
+    <ListView x:Name="ListVeiculos" ItemsSource="{Binding Veiculos}" Margin="20" ItemTapped="ListVeiculos_ItemTapped">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding FormatedName}"></Label>
+                        <Label Text=" - "></Label>
+                        <Label Text="{Binding FormatedPrice}"></Label>
+                    </StackLayout>
+                    
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>
